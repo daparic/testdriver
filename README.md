@@ -1,5 +1,8 @@
 # Introduction
-This a quick way to learn Linux kernel development by writing a simple dummy driver.
+This a quick way to learn Linux kernel development by writing a simple dummy driver. I am using Ubuntu 17.04 here, but any recent Ubuntu 
+should work. Prerequisites:
+- make
+- gcc
 
 ## Build
 ```
