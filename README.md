@@ -8,13 +8,13 @@ The overall idea is that the driver returns some data when you try to read from 
 visible from the user, we also have to create character device file using the `mknod` command using the generated *major number* when you
 load the driver into the kernel. 
 
-## Build
+## I) Build
 ```
 make
 ```
 This will produce `testdriver.ko` driver.
 
-## Load
+## II) Load
 To test, open two terminals. In the first terminal to watch the driver's assigned major number:
 ```
 sudo dmesg -w
@@ -26,7 +26,7 @@ sudo insmod testdriver.ko
 sudo mknod /dev/johnny c 245 0 # this assumes that 245 is the major number shown in first terminal
 ```
 
-## Test
+## III) Test
 Read data from the driver:
 ```
 dd if=/dev/johnny bs=13 count=3
