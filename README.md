@@ -27,7 +27,7 @@ sudo mknod /dev/johnny c 245 0 # this assumes that 245 is the major number shown
 ```
 
 ## III) Test
-Read data from the driver:
+Read data from the driver using the `dd` command:
 ```
 dd if=/dev/johnny bs=13 count=3
 ```
