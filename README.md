@@ -4,7 +4,7 @@ should work. Prerequisites:
 - make
 - gcc
 
-The overall idea is that the driver returns some data when you try to read from it using the `dd` command. In order for the driver to be 
+The overall idea is that the driver returns [some data](https://github.com/daparic/testdriver/blob/master/testdriver.c#L10) when you try to read from it using the `dd` command. In order for the driver to be 
 visible from the user, we also have to create character device file using the `mknod` command using the generated *major number* when you
 load the driver into the kernel. 
 
