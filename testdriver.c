@@ -5,6 +5,9 @@
 #include <linux/module.h>
 #include <linux/slab.h>
 
+#include <linux/poll.h>
+#include <net/sock.h>
+
 MODULE_LICENSE("GPL");
 #define DEVICE_NAME "testdriver"
 #define EXAMPLE_MSG "My precious!\n"
