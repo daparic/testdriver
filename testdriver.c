@@ -5,7 +5,6 @@
 #include <linux/module.h>
 #include <linux/slab.h>
 
-#include <linux/poll.h>
 #include <net/sock.h>
 
 MODULE_LICENSE("GPL");
